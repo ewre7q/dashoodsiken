@@ -1,0 +1,50 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "dashood", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--tabs
+
+local Tab1 = Window:MakeTab({
+	Name = "aim",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "esp",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+
+
+
+--buttons
+
+Tab1:AddButton({
+	Name = "camlock (q)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HomeMadeScripts/Camlock-aimlock/main/obf_Wxr6QgzF76G1y2Ch77KN4Zt5Nz0A6GIl61gitv3mRR2t3V103al5d0g26s4KY04r.lua.txt"))()
+  	end    
+})
+
+
+Tab2:AddButton({
+	Name = "esp",
+	Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
+  	end    
+})
+
+
+--nof
+
+OrionLib:MakeNotification({
+	Name = "MADE BY LYRICA",
+	Content = "tt: ewre7q",
+	Image = "rbxassetid://4483345998",
+	Time = 60
+})
