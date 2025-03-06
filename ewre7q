@@ -16,6 +16,12 @@ local Tab2 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab3 = Window:MakeTab({
+	Name = "misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 
 
 
@@ -38,6 +44,17 @@ Tab2:AddButton({
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
   	end    
 })
+
+Tab3:AddButton({
+	Name = "inf yield",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  	end    
+})
+
+
+
+
 
 
 --nof
